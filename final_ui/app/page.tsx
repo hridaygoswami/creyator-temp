@@ -4,7 +4,7 @@ import SubscriptionTierSelector from "@/app/subscription-tier-selector"
 
 export default function Home() {
   const tiers = [
-    { tier: 1, price: 5, features: ["Basic content access"] },
+    { tier: 1, price: 1, features: ["Basic content access"] },
     { tier: 2, price: 10, features: ["Premium content access", "Ad-free experience"] },
     {
       tier: 3,
@@ -13,10 +13,6 @@ export default function Home() {
     },
   ]
 
-  const handleSelectTier = (tier) => {
-    console.log("Selected tier:", tier)
-    // Add your subscription logic here
-  }
 
   return (
 
@@ -25,7 +21,6 @@ export default function Home() {
       <h1 className="text-3xl font-bold mb-8">Subscription Tier Selector</h1>
       <SubscriptionTierSelector
         tiers={tiers}
-        onSelectTier={handleSelectTier}
         buttonText="Subscribe Now"
         dialogTitle="Choose Your Subscription Plan"
         />

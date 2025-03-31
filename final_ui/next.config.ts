@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   output: "export",
   images: {
     unoptimized: true,
+    domains: ['api.qrserver.com', 'rzp.io'],
   },
   eslint: {
     ignoreDuringBuilds: true, // ✅ Ignore ESLint errors during build
@@ -12,6 +13,7 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true, // ✅ Ignore TypeScript errors during build
   },
+  
 };
 
 export default nextConfig;
